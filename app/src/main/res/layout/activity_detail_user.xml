@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailUserActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_Detail_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_Detail_Photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/github"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Name"
+                style="@style/Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/name"
+                android:textAlignment="textStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_Detail_Username"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toBottomOf="@id/textView_Detail_Name"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Username"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_Detail_Username"
+                app:layout_constraintTop_toTopOf="@id/imageView_Detail_Username"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Username"/>
+
+            <ImageView
+                android:id="@+id/imageView_Detail_Link"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toBottomOf="@id/textView_Detail_Username"
+                android:src="@drawable/ic_baseline_link_24" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Link"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/link"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_Detail_Link"
+                app:layout_constraintTop_toTopOf="@id/imageView_Detail_Link"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Link"/>
+
+            <ImageView
+                android:id="@+id/imageView_Detail_Location"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toBottomOf="@id/imageView_Detail_Link"
+                android:src="@drawable/ic_baseline_person_pin_circle_24" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Location"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_Detail_Location"
+                app:layout_constraintTop_toTopOf="@id/imageView_Detail_Location"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Location"/>
+
+            <ImageView
+                android:id="@+id/imageView_Detail_Company"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toBottomOf="@id/imageView_Detail_Location"
+                android:src="@drawable/ic_baseline_business_24" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Company"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/company"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_Detail_Company"
+                app:layout_constraintBottom_toBottomOf="@id/imageView_Detail_Company"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Company"/>
+
+            <ImageView
+                android:id="@+id/imageView_Detail_Repository"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"
+                app:layout_constraintTop_toBottomOf="@id/imageView_Detail_Company"
+                android:src="@drawable/ic_baseline_collections_bookmark_24" />
+
+            <TextView
+                android:id="@+id/textView_Detail_Repository"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/repository"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView_Detail_Repository"
+                app:layout_constraintBottom_toBottomOf="@id/imageView_Detail_Repository"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Repository"/>
+
+            <TextView
+                android:id="@+id/textView_Detail_Gist"
+                style="@style/Username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/gist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_Detail_Repository"
+                app:layout_constraintEnd_toStartOf="@+id/toogle_favorit"
+                app:layout_constraintStart_toEndOf="@id/imageView_Detail_Photo"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/textView_Detail_Gist">
+
+                <TextView
+                    android:id="@+id/textView_Detail_Followers"
+                    style="@style/Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/followers"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView_Detail_Following"
+                    style="@style/Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/following"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView_Detail_Photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/toogle_favorit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/favorite_toggle"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Detail_Repository"
+                app:layout_constraintVertical_bias="0.594" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TB_Detail"
+        style="@style/Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_Detail_1" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/VP_Detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/TB_Detail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

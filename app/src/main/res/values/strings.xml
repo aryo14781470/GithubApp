@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">GithubUser V3 - SUB 3</string>
+
+    <!-- Splash Screen Act -->
+    <string name="splash_desc">Where the world \nbuilds software</string>
+    <string name="splash_name">Github Users</string>
+    <string name="splash_username">https://github.com</string>
+
+    <!-- Menu Act -->
+    <string name="menu_profile">About Me</string>
+    <string name="menu_mode">Setting Mode</string>
+    <string name="menu_name">Yusuf Aryo Wibowo A7434G3014</string>
+    <string name="menu_username">a7434g3014@bangkit.academy</string>
+    <string name="main_cari">Cari User</string>
+
+    <!-- setting Act -->
+    <string name="setting_mode">Dark Mode</string>
+
+    <!-- Action Bar -->
+    <string name="action_bar_setting">Pilih Mode</string>
+    <string name="action_bar_main">Github User</string>
+    <string name="action_bar_detail">Detail User</string>
+    <string name="action_bar_favorit">Favorit User</string>
+    <string name="action_bar_profile">Profile</string>
+
+    <!-- Tab Layout -->
+    <string name="tab_1">Followers</string>
+    <string name="tab_2">Following</string>
+
+    <!-- Global String -->
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="link">Link</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+    <string name="gist">Gist</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="dummy_null">-</string>
+
+</resources>
